@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// 문제에서는 10^-9의 오차이내의 소숫점을 원함. 따라서 printf로 .9f로 조정해야함. cout으로 조정가능한지 공부할것.
 int main(){
     int A,B;
     cin >> A >>B;
