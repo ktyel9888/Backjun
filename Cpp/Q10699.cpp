@@ -9,9 +9,9 @@ using namespace std;
 
 int main() {
     time_t now = time(0); // 현재 시간 가져오기
-    struct tm* t = localtime(&now);
-    printf("%d-%02d-%02d\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday); 
-    return 0;
+    struct tm* t = localtime(&now); // 구조체 tm* t 로 now에서 localtime을 통해 가져온다. 유닉스 타임(1970년 1월 1일 0시 0분부터 센다!
+    printf("%d-%02d-%02d\n", t->tm_year + 1900, t->tm_mon + 1, t->tm_mday); // 년은 1900을 더할 것!, 월은 꼭 1을 더할 것!
+    return 0; 
 }
 
 
