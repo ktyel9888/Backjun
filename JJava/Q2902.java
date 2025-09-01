@@ -13,8 +13,17 @@ public class Q2902 {
                 answer += list.charAt(i);
             }
         }
-        /* 아스키 코드에서는 알파벳 대문자는 65~90, 소문자는 97~122까지 이며, 하이픈은 45이기에 조건문 사용.
-        하지만 매직넘버를 사용하기 보단 문자열 자체로 쪼개자. 'A'를 사용. */
+        /*
+        1. 문자 리터럴 사용 (가독성 향상)
+        if (list.charAt(i) >= 'A' && list.charAt(i) <= 'Z') {
+            answer += list.charAt(i);
+        }
+        2. Java Character 클래스 사용 (가장 권장되는 방식)
+        if (Character.isUpperCase(list.charAt(i))) {
+            answer += list.charAt(i);
+        }
+        아스키 코드에서는 알파벳 대문자는 65~90, 소문자는 97~122까지 이며, 하이픈은 45이기에 조건문 사용.
+        하지만 매직넘버를 사용하기 보단 문자열 자체로 쪼개자. 'A'를 사용하도록 하자. */
         System.out.println(answer);
     }
 
