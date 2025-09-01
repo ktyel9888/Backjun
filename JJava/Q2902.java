@@ -9,10 +9,12 @@ public class Q2902 {
         String list = sc.nextLine();
         String answer = ""; // 답 출력용 변수
         for(int i=0; i<list.length(); i++){
-            if(list.charAt(i)<=90 && list.charAt(i)!=45){
+            if(list.charAt(i)<=90 && list.charAt(i)!=45){ // list.charAt(i)<='A' && list.charAt(i)!='-'
                 answer += list.charAt(i);
             }
-        }// 아스키 코드에서는 알파벳 대문자는 65~90, 소문자는 97~122까지 이며, 하이픈은 45이기에 조건문 사용.
+        }
+        /* 아스키 코드에서는 알파벳 대문자는 65~90, 소문자는 97~122까지 이며, 하이픈은 45이기에 조건문 사용.
+        하지만 매직넘버를 사용하기 보단 문자열 자체로 쪼개자. 'A'를 사용. */
         System.out.println(answer);
     }
 
