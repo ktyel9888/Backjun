@@ -13,7 +13,7 @@ int main(){
     if((x==0)&&(y==0)){
         cout << "Not a moose";
     } else if(x==y){
-        cout <<"Even" << x+y <<endl;
+        cout <<"Even " << x+y <<endl;
     } else {
          int max_horns = (x>y) ? x: y; // 삼항 연산자. x가 크면 x를, y가 크면 y를 max_horns에 넣는다.
         cout << "Odd "<< max_horns * 2 << endl;
